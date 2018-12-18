@@ -1,0 +1,19 @@
+{
+  "entrypoint": "index.html",
+  "shell": "src/my-project.js",
+  "sources": [
+   "src/my-project.js",
+   "manifest/**",
+   "package.json"
+  ],
+  "extraDependencies": [
+    "node_modules/@webcomponents/webcomponentsjs/**"
+  ],
+  "builds": [{
+    "name": "mybuild",
+    "bundle": true,
+    "js": {
+      "minify": true
+    }
+  }]
+}
